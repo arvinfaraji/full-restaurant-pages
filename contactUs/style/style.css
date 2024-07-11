@@ -1,0 +1,36 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@font-face {
+    font-family: 'vazir';
+    src: url('Vazir.ttf');
+}
+.lalezar{
+    font-family: 'lalezar';
+}
+body{
+    font-family: 'vazir' , sans-serif;
+    font-size: 1rem;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px auto;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  
+  .icons .bi-instagram:hover {
+    color: indianred;
+  }
+  .icons .bi-whatsapp:hover {
+    color: green;
+  }
+  .icons .bi-telegram:hover {
+    color: rgb(42, 143, 176);
+  }
+  .icons .bi-youtube:hover {
+    color: red;
+  }
+  .icons .bi-telephone:hover {
+    color: greenyellow;
+  }

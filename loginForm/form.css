@@ -1,0 +1,52 @@
+body {
+  background-color: #FFB901;
+  background: linear-gradient(to right, #FFB901, rgb(152, 169, 0));
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+@font-face {
+  font-family: 'vazir';
+  src: url('fonts/Vazir.ttf');
+}
+
+.lalezar {
+  font-family: 'lalezar';
+}
+
+.card-img-left {
+  width: 45%;
+  /* Link to your background image using in the property below! */
+  background: scroll center url('https://source.unsplash.com/WEQbe2jBg40/414x512');
+  background-size: cover;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.icons .bi-instagram:hover {
+  color: indianred;
+}
+.icons .bi-whatsapp:hover {
+  color: green;
+}
+.icons .bi-telegram:hover {
+  color: rgb(42, 143, 176);
+}
+.icons .bi-youtube:hover {
+  color: red;
+}
+.icons .bi-telephone:hover {
+  color: greenyellow;
+}

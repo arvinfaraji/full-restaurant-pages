@@ -1,0 +1,59 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@font-face {
+    font-family: 'vazir';
+    src: url('../font/Vazir.ttf');
+}
+.lalezar{
+    font-family: 'lalezar';
+}
+body{
+    font-family: 'vazir' , sans-serif;
+    font-size: 1rem;
+}
+/* color  */
+.color{
+    color: #FFB901;
+}
+.food-info{
+    text-align: justify;
+    color: #777777;
+}
+/* @media screen and (max-width: 768px) {
+    .text-break-center{
+        text-align: center;
+    }
+} */
+/* info width break point  */
+@media screen and (max-width: 768px) {
+    .width-break{
+        width: 100%;
+        text-align: justify;
+    }
+}
+@media screen and (min-width: 768px) {
+    .width-break-min{
+        width: 85%;
+    }
+}
+.infoList{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.indoItem{
+    border: 1px solid lightgray;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.addBtn{
+    all: unset;
+    border: 1px solid black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all .15s;
+}
+.addBtn:hover{
+    border: 1px solid #FFB901;
+}

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food</title>
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+  <!-- my css style -->
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- aos animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- fontawsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- header  -->
+  <header class="header">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-3 lalezar" href="#"><img src="images/logopng.jpg" class="img-fluid logo-img mx-2"
+            alt="">سرآشپز</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fs-2 lalezar" id="offcanvasNavbarLabel"><img src="images/logopng.jpg"
+                class="img-fluid logo-img mx-2" alt="">سرآشپز</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item px-2">
+                <a id="caret" class="nav-link text-dark" href="#collapseMenu" role="button" data-bs-toggle="collapse"
+                  aria-expanded="false">
+                  <i class="bi bi-pc-display fs-5 d-md-none"></i>
+                  <span class="ms-2 item-hover">غذای های ما</span>
+                  <i class="fa-solid fa-angle-down mx-1"></i>
+                </a>
+                <div class="collapse position-md-fixed" id="collapseMenu">
+                  <div class="services-list">
+                    <div class="services-item">
+                      <i class="fa-solid fa-bowl-food fs-5 color me-1"></i>
+                      <a href="../wormFood/index.html" class="fw-bold nav-link-foods mx-2">غذا های گرم</a>
+                    </div>
+                    <div class="services-item">
+                      <i class="fa-solid fa-burger fs-5 color me-1"></i>
+                      <a href="../sandwichFood/index.html" class="fw-bold nav-link-foods mx-2">فست فود ها</a>
+                    </div>
+                    <div class="services-item">
+                      <i class="fa-solid fa-burger fs-5 color me-1"></i>
+                      <a href="../burgerFood/index.html" class="fw-bold nav-link-foods mx-2">برگر ها</a>
+                    </div>
+                    <div class="services-item">
+                      <i class="fa-solid fa-pizza-slice fs-5 color me-1"></i>
+                      <a href="../pizzaFood/index.html" class="fw-bold nav-link-foods mx-2">پیتزا</a>
+                    </div>
+                    <div class="services-item">
+                      <i class="fa-solid fa-carrot fs-5 color me-1"></i>
+                      <a href="../saladFood/index.html" class="fw-bold nav-link-foods mx-2">سالاد ها</a>
+                    </div>
+                    <div class="services-item">
+                      <i class="fa-solid fa-wine-bottle fs-5 color me-1"></i>
+                      <a href="../drinksFood/index.html" class="fw-bold nav-link-foods mx-2">نوشیدنی ها</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item px-2 d-flex align-items-center">
+                <a class="nav-link text-dark" aria-current="page" href="../menuPage/index.html">
+                  <i class="bi bi-house fs-5 d-md-none"></i>
+                  <span class="item-hover">منو</span>
+                </a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-dark" href="../contactUs/index.html">
+                  <i class="bi bi-telephone fs-5 d-md-none"></i>
+                  <span class="ms-2 item-hover">تماس با ما</span>
+                </a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-dark" href="#about-us">
+                  <i class="bi bi-person fs-5 d-md-none"></i>
+                  <span class="ms-2 item-hover">درباره ما</span>
+                </a>
+              </li>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <button class="btn btn-warning text-white d-md-none w-50 mt-2">ورود / ثبت نام</button>
+                <button class="btn btn-warning text-white d-md-none w-50 mt-2">سبد خرید<i
+                    class="bi bi-basket mx-3"></i></button>
+
+                <button class="btn btn-warning mx-2 display-md-none"><i class="bi bi-basket fs-5"></i></button>
+                <a href="../loginForm/form.html" class="btn btn-warning display-md-none"><i
+                    class="bi bi-person fs-5"></i></a href="../loginForm/form.html">
+              </ul>
+              <li class="nav-item px-2 d-md-none">
+                <hr class="my-4">
+                <p>دیجی مدیا <b>در شبکه های اجتماعی</b></p>
+                <div class="row fs-1 w-75">
+                  <div class="col">
+                    <i class="fa-brands fa-linkedin item-hover"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fa-brands fa-facebook item-hover"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fa-brands fa-instagram item-hover"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fa-brands fa-youtube item-hover"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- intro  -->
+  <section class="mt-5 py-5">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-12 col-md-6 text-break-center">
+          <h3 class="lalezar">سرآشپز جایی که تجربه لذت بخش و خاطره انگیزی از غذاهای شگفت انگیزی را تجربه خواهید کرد</h3>
+          <span class="fw-bold py-2 d-inline-block"><i class="bi bi-star-fill color me-2"></i>با بیش از 15 سال
+            سابقه</span>
+          <div class="div">
+            <input type="text" placeholder="دنبال چه چیزی میگردی؟" class="form-control w-50 mt-3 d-inline"
+              style="height: 50px;">
+            <button type="submit" style="height: 50px;" class="btn btn-warning d-inline px-4"><i
+                class="bi bi-search"></i></button>
+            <button class="start-btn fs-5 fw-bold mt-3">برو بریم <i class="bi bi-arrow-left ms-2"
+                style="height: 0;"></i></button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 intro-pic" data-aos="zoom-in-right">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="images/burger-combo-slide-final.png" class="img-fluid" alt="">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="images/build-burger-slide-final.png" class="img-fluid" alt="">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="images/fried-chicken-slide-final.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about us  -->
+  <section class="py-5 px-3">
+    <div id="about-us" class="container">
+      <h2 class="text-center lalezar">ما کی هستیم ؟</h2>
+      <div class="row align-items-center mt-5 gy-5">
+        <div class="col-12 col-md-6 text-break-center">
+          <h3 class="lalezar">با افتخار <span class="color">15</span> سال در کنار شما مانده ایم</h3>
+          <p class="width-break mt-3 about-info">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع
+            با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه
+            و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ
+            پیشرو در زبان فارسی ایجاد کرد
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="images/about-us.png.jpg" class="img-fluid aboutus-pic" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- menu  -->
+  <section class="py-5 px-3">
+    <div class="container">
+      <h2 class="text-center lalezar">چی میخوای ؟</h2>
+      <div class="row text-center mt-5" data-aos="fade-up">
+        <section class="scrollport">
+          <div class="food">
+            <img src="images/pesh.jpg" class="food-img" alt=""><br>
+            <a href="../wormFood/index.html" class="fs-5 fw-bold pointer" style="cursor: pointer;">پیش غذا</a>
+          </div>
+          <div class="food">
+            <img src="images/chiken.jpg" class="food-img" alt=""><br>
+            <a href="../sandwichFood/index.html" class="fs-5 fw-bold" style="cursor: pointer;">فست فود ها</a>
+          </div>
+          <div class="food">
+            <img src="images/bbbbbbbbbb.jpg" class="food-img" alt=""><br>
+            <a href="../burgerFood/index.html" class="fs-5 fw-bold" style="cursor: pointer;">برگر ها</a>
+          </div>
+          <div class="food">
+            <img src="images/pizza.jpg" class="food-img" alt=""><br>
+            <a href="../pizzaFood/index.html" class="fs-5 fw-bold" style="cursor: pointer;">پیتزا</a>
+          </div>
+          <div class="food">
+            <img src="images/salad.jpg" class="food-img" alt=""><br>
+            <a href="../saladFood/index.html" class="fs-5 fw-bold" style="cursor: pointer;">سالاد ها</a>
+          </div>
+          <div class="food">
+            <img src="images/drink.jpg" class="food-img" alt=""><br>
+            <a href="../drinksFood/index.html" class="fs-5 fw-bold" style="cursor: pointer;">نوشیدنی ها</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- this week off  -->
+  <section class="py-5 px-3">
+    <div class="container">
+      <h2 class="text-center lalezar">تخفیفات <span class="color">داغ</span> این هفته</h2>
+      <div class="row text-center row-cols-1 row-cols-md-2 row-cols-lg-4 gy-5 mt-5" data-aos="fade-left">
+        <div class="col">
+          <div class="off-card">
+            <img src="images/bbbbbbbbbb.jpg" class="card-img-top img-fluid food-img mx-auto" alt="...">
+            <div class="card-body">
+              <a href="../burgerBuy/burger-1/index.html" class="card-title btn fs-4 lalezar py-1">برگر پنیری ویژه</a>
+              <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با کاهو،
+                گوجه فرنگی.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="fw-bold text-success fs-5 mt-3">299,000t</p>
+                <a href="../burgerBuy/burger-1/index.html" class="btn buy-off">سفارش دهید</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="off-card">
+            <img src="images/humberger-2.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+            <div class="card-body">
+              <a href="../burgerBuy/burger-2/index.html" class="card-title btn fs-4 lalezar py-1">چیز برگر</a>
+              <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با کاهو،
+                گوجه فرنگی.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="fw-bold text-success fs-5 mt-3">188,000t</p>
+                <a href="../burgerBuy/burger-2/index.html" class="btn buy-off">سفارش دهید</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="off-card">
+            <img src="images/bbbbbbbbbb.jpg" class="card-img-top img-fluid food-img mx-auto" alt="...">
+            <div class="card-body">
+              <a href="../burgerBuy/burger-3/index.html" class="card-title btn fs-4 lalezar py-1">برگر همراه با فیله</a>
+              <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با کاهو،
+                گوجه فرنگی.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="fw-bold text-success fs-5 mt-3">192,000t</p>
+                <a href="../burgerBuy/burger-3/index.html" class="btn buy-off">سفارش دهید</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="off-card">
+            <img src="images/humberger-4.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+            <div class="card-body">
+              <a href="../burgerBuy/burger-4/index.html" class="card-title btn fs-4 lalezar py-1">برگر سوخاری</a>
+              <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با کاهو،
+                گوجه فرنگی.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="fw-bold text-success fs-5 mt-3">192,000t</p>
+                <a href="../burgerBuy/burger-4/index.html" class="btn buy-off">سفارش دهید</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../menuPage/index.html" class="mx-auto see-more-btn">مشاهده بیشتر</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- popular  -->
+  <section class="py-5">
+    <div class="container-fluid">
+      <h2 class="text-center lalezar">محبوب های <span class="color">سرآشپز</span></h2>
+      <div class="row mt-5 popular" data-aos="fade-up">
+        <section class="scrollport">
+          <div class="col">
+            <div class="card">
+              <img src="images/bbbbbbbbbb.jpg" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../burgerBuy/burger-1/index.html" class="card-title btn fs-4 lalezar py-1">برگر پنیری ویژه</a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">299,000t</p>
+                  <a href="../burgerBuy/burger-1/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/humberger-6.png.jpg" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../burgerBuy/burger-6/index.html" class="card-title btn fs-4 lalezar py-1">برگر سبزیجات</a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">245,000t</p>
+                  <a href="../burgerBuy/burger-6/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/sandwich-1.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../sandwichBuy/sandwich-1/index.html" class="card-title btn fs-4 lalezar py-1">ساندویچ فیه
+                  مرغ</a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">300,000t</p>
+                  <a href="../sandwichBuy/sandwich-1/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/sandwich-2.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../sandwichBuy/sandwich-2/index.html" class="card-title btn fs-4 lalezar py-1">ساندویچ فیله
+                  گوشت</a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">320,000t</p>
+                  <a href="../sandwichBuy/sandwich-2/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/hotdog-1.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../sandwichBuy/hotdog-1/index.html" class="card-title btn fs-4 lalezar py-1">هات داگ</a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">245,000t</p>
+                  <a href="../sandwichBuy/hotdog-1/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/hotdog-2.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../sandwichBuy/hotdog-2/index.html" class="card-title btn fs-4 lalezar py-1">هات داگ
+                  سبزیجات</a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">215,000t</p>
+                  <a href="../sandwichBuy/hotdog-2/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/pizza-1.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../pizzaBuy/pizza-1/index.html" class="card-title btn fs-4 lalezar py-1">پیتزا مخصوص</a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">305,000t</p>
+                  <a href="../pizzaBuy/pizza-1/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/pizza-5.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../pizzaBuy/pizza-5/index.html" class="card-title btn fs-4 lalezar py-1">پیتزا مخلوط</a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">290,000t</p>
+                  <a href="../pizzaBuy/pizza-5/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/salad-1.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../saladBuy/salad-1/index.html" class="card-title btn fs-4 lalezar py-1">سالاد مخلوط <span
+                    class="fs-5" style="color: #9c9c9c;">(بسته ای)</span></a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">80,000t</p>
+                  <a href="../saladBuy/salad-1/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/salad-4.png" class="card-img-top img-fluid food-img mx-auto" alt="...">
+              <div class="card-body">
+                <a href="../saladBuy/salad-4/index.html" class="card-title btn fs-4 lalezar py-1">سالاد مخصوص سرآشپز
+                  <span class="fs-5" style="color: #9c9c9c;">(بسته ای)</span></a>
+                <p class="card-text food-info-color py-1">گوشت سینه دودی، دنده، سوسیس دودی، گوشت سفید و پنیر چدار با
+                  کاهو، گوجه فرنگی.</p>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="fw-bold text-success fs-5 mt-3">180,000t</p>
+                  <a href="../saladBuy/salad-4/index.html" class="btn buy-off">سفارش دهید</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- services  -->
+  <section class="py-5 px-3">
+    <div class="container">
+      <div class="row align-items-center mt-5 gy-5">
+        <div class="col-12 col-md-4">
+          <h2 class="lalezar py-3">نزدیک ترین شعب و رستوران های سرآشپز</h2>
+          <p class="food-info-color">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+            گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+            مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+          <button class="mx-auto see-more-btn">نزدیکترین شعبه</button>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="images/undraw_eating_together_re_ux62.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-12 col-md-4" style="direction: ltr;">
+          <h2 class="lalezar py-3">حمل و نقل رایگان و سریع رستوران سرآشپز</h2>
+          <p class="food-info-color">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+            گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+            مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+          <button class="mx-auto see-more-btn">مشاهده بیشتر</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- how order  -->
+  <section class="py-5">
+    <div class="container-fluid">
+      <div class="row how-order mt-5 gy-5 px-3">
+        <h2 class="text-center lalezar text-white fs-1 mt-5">نحوه سفارش</h2>
+        <div class="col-12 col-md-4">
+          <div class="services-card my-4">
+            <img src="images/order.webp" class="services-img" alt="">
+            <div class="card-body">
+              <h3 class="card-title lalezar py-3">ثبت سفارش</h3>
+              <p class="card-text food-info-color">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="services-card my-4">
+            <img src="images/buy.webp" class="services-img" alt="">
+            <div class="card-body">
+              <h3 class="card-title lalezar py-3">ثبت سفارش</h3>
+              <p class="card-text food-info-color">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="services-card my-4">
+            <img src="images/done.webp" class="services-img" alt="">
+            <div class="card-body">
+              <h3 class="card-title lalezar py-3">ثبت سفارش</h3>
+              <p class="card-text food-info-color">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="">
+    <div class="container-fluid">
+
+      <div class="row align-items-center mt-5 gy-5">
+        <div class="col-12 col-lg-5">
+          <h4 class="fw-bold">sarashpaz.ir</h4>
+          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+        </div>
+        <div class="col-12 col-lg-2 offset-lg-1">
+          <h4 class="fw-bold border-bottom border-4 border-warning pb-3 w-75">لینک ها</h4>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            صفحه اصلی
+          </p>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            محصولات
+          </p>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            درباره ما
+          </p>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            خدمات
+          </p>
+        </div>
+        <div class="col-12 col-lg-2">
+          <h4 class="fw-bold border-bottom border-4 border-success pb-3 w-75">خدمات</h4>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            صفحه اصلی
+          </p>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            محصولات
+          </p>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            درباره ما
+          </p>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            خدمات
+          </p>
+        </div>
+        <div class="col-12 col-lg-2">
+          <h4 class="fw-bold border-bottom border-4 border-info pb-3 w-75">ارتباط با ما</h4>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            صفحه اصلی
+          </p>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            محصولات
+          </p>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            درباره ما
+          </p>
+          <p>
+            <i class="bi bi-caret-left"></i>
+            خدمات
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center mt-3 py-3 px-3">
+        <div class="col-12 col-md-6">
+          <h3 class="lalezar">نظرات خود را به ما بگویید</h3>
+        </div>
+        <div class="col-12 col-md-6">
+          <input type="text" placeholder="دنبال چه چیزی میگردی؟" class="footer-input">
+          <button type="submit" style="padding: 15px 25px;" class="btn btn-warning d-inline px-4"><i
+              class="bi bi-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- links  -->
+  <section>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- my js flie -->
+    <script src="js/app.js"></script>
+  </section>
+</body>
+
+</html>
